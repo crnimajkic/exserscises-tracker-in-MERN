@@ -11,3 +11,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  padding: 10px !important;
+  
+}
+
+.btn-corr{
+  margin: 20px !important;
+}
+.btn-corr:hover{
+  background-color: red !important;
+}
+
+td {
+  text-align: center;
+
+}
+th {
+  text-align: center !important;
+  font-weight:  1000 !important;
+  padding-bottom: 20px !important;
+}
+
+i{
+  padding: 10px !important;
+  color: rgb(0, 0, 0);
+}
+i:hover{
+  color: red;
+}
+
+.username{
+  font-weight: 600 !important;
+}
+
+.username::first-letter {
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 2rem !important;
+  margin-bottom: 40px !important;
+  margin-left: 20px !important;
+}
+
+.logo{
+  padding: 0 20px;
+}
+
+.navbar{
+  margin-left: -20px !important;
+
+}
+
+.form-group{
+  max-width: 500px !important;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.icorr{
+  color: rgb(228, 228, 228) !important;
+}
+
+.nav-link{
+  line-height: 36px;
+}
+.navbar-brand{
+  font-weight: 700;
+  letter-spacing: 1px;
+}

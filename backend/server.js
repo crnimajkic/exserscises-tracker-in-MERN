@@ -3,6 +3,7 @@ const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
 require('dotenv').config()
+const path = require('path')
 
 app.use(cors())
 app.use(express.json())
@@ -24,6 +25,8 @@ const usersRouter = require('./routes/users')
 
 app.use('/exsercises',exserciseRouter)
 app.use('/users',usersRouter)
+
+
 
 
 

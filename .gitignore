@@ -13,9 +13,9 @@
 
 # misc
 img
-.env
+# .env
 /backend/node_modules
-/backend/.env
+# /backend/.env
 .DS_Store
 .env.local
 .env.development.local

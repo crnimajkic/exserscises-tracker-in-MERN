@@ -39,7 +39,7 @@ export default class CreateUser extends Component {
     
   
 
-    axios.post("https://exsercise-tracker.onrender.com/users/add",user)
+    axios.post("https://exercise-tracker-app-api.onrender.com/users/add",user)
     .then(res => console.log(res.data))
 
     this.setState({

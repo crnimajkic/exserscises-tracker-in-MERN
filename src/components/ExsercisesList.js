@@ -15,7 +15,7 @@ export default class ExsercisesList extends Component {
   }
 
   componentDidMount(){
-    axios.get('http://localhost:5000/exsercises')
+    axios.get('https://exsercise-tracker.onrender.com/exsercises')
     .then(res => {
       this.setState({exsercises: res.data})
     })
@@ -25,7 +25,7 @@ export default class ExsercisesList extends Component {
   }
 
   deleteExsercise(id){
-    axios.delete('http://localhost:5000/exsercises/'+ id)
+    axios.delete('https://exsercise-tracker.onrender.com/exsercises/'+ id)
     .then(res => {
       console.log(res.data)
       this.setState({exsercises:this.state.exsercises.filter(exsercise => exsercise._id !== id)})

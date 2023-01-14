@@ -25,7 +25,7 @@ export default class CreateExsercise extends Component {
 
   componentDidMount() {
 
-    axios.get("https://exsercise-tracker.onrender.com/users")
+    axios.get("https://exercise-tracker-app-api.onrender.com/users")
     .then(res => {
       if(res.data.length>0){
         this.setState({
@@ -74,7 +74,7 @@ export default class CreateExsercise extends Component {
     
     console.log(exsercise)
 
-    axios.post("https://exsercise-tracker.onrender.com/exsercises/add",exsercise)
+    axios.post("https://exercise-tracker-app-api.onrender.com/exsercises/add",exsercise)
     .then(res => console.log(res.data))
 
     window.location = '/'

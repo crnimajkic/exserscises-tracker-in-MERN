@@ -24,7 +24,7 @@ export default class EditExsercise extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/exsercises/' + this.props.match.params.id)
+    axios.get('https://exsercise-tracker.onrender.com/exsercises/' + this.props.match.params.id)
       .then(res => {
         this.setState({
           username: res.data.username,
@@ -36,7 +36,7 @@ export default class EditExsercise extends Component {
       .catch((err) => console.log(err))
 
 
-    axios.get("http://localhost:5000/users")
+    axios.get("https://exsercise-tracker.onrender.com/users")
       .then(res => {
         if (res.data.length > 0) {
           this.setState({
@@ -84,7 +84,7 @@ export default class EditExsercise extends Component {
 
     
 
-    axios.post("http://localhost:5000/exsercises/update/" + this.props.match.params.id, exsercise)
+    axios.post("https://exsercise-tracker.onrender.com/exsercises/update/" + this.props.match.params.id, exsercise)
       .then(res => console.log(res.data))
 
     window.location = "/"
